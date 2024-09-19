@@ -27,7 +27,6 @@
   "homepage": "https://github.com/blurtopian/truhack_tgbot#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "express": "^4.21.0",
     "html-to-text": "^9.0.5",
     "mongoose": "^7.4.0",
     "node-telegram-bot-api": "^0.66.0",

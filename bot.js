@@ -1,7 +1,5 @@
 require("dotenv").config();
 const TelegramBot = require("node-telegram-bot-api");
-const express = require('express');
-const app = express();
 const mongoose = require("mongoose");
 const { htmlToText } = require('html-to-text');
 
@@ -201,14 +199,4 @@ bot.on("callback_query", async (callbackQuery) => {
   } else {
     bot.sendMessage(chatId, "No more tweets to review.");
   }
-});
-
-// Endpoint to keep the server alive
-app.get('/', (req, res) => {
-  res.send('Bot is running!');
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
 });
